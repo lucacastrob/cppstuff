@@ -10,7 +10,7 @@
 
 
 // SINGLE-THREAD FILTERS
-
+void blackWhite_mt(ppm* img, ppm* img_target, unsigned int nthreads, unsigned int thread);
 void blackWhite(ppm& img); //Nos toca
 void shades(ppm& img, unsigned char shades); //Nos toca
 void merge(ppm& img1, ppm& img2, float alpha); //Nos toca
