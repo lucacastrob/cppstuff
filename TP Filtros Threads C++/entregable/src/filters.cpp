@@ -147,3 +147,23 @@ void crop(ppm& img, ppm& img_target, int col, int filas)
     }
 
 }
+
+void zoom(ppm& img, ppm img_target, int n)
+{
+    for(int y = 0; y < img.height; y++)
+    {
+        for(int x = 0; x < img.width; x++)
+        {
+            short int r1 = img.getPixel(y, x).r;
+            short int g1 = img.getPixel(y, x).g;
+            short int b1 = img.getPixel(y, x).b; 
+            for (int y1 = 0; y1 < n; y1++)
+            {
+                for(int x1 = 0; x1 < n; x1++)
+                {
+                    img_target.setPixel(y*n + y1, x*n + x1,pixel(r1,g1,b1));
+                }
+            }
+        }
+    }
+}

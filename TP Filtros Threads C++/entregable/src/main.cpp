@@ -24,7 +24,7 @@ int main(int argc , char* argv[]){
 	
 	int filaseliminar = 300;
 	int columnaseliminar = 300;
-
+	ppm img_target((ppm(img.width*n, img.height*n)));
 	ppm img_target(ppm( img.width - columnaseliminar, img.height - filaseliminar));
 
 	// string img2(argv[6]);
