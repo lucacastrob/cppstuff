@@ -16,6 +16,8 @@ void shades(ppm& img, unsigned char shades); //Nos toca
 void merge(ppm& img1, ppm& img2, float alpha); //Nos toca
 void zoom(ppm &img, ppm &img_zoomed, int n); //Nos toca
 void edgeDetection(ppm &img, ppm &img_target); //Nos toca
+void crop(ppm& img, ppm& img_target, int col, int filas);
+// Crop
 
 void contrast(ppm& img, float contrast);
 void brightness(ppm& img, float b, int start, int end);
